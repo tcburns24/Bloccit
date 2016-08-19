@@ -19,3 +19,13 @@ end
 puts "Seed finished"
 puts "#{Post.count} posts created"
 puts "#{Comment.count} comments created"
+
+
+# Create Questions
+10.times do
+  Question.create!(
+  title: "???Question Title???"
+  body: "???Question Body???"
+  resolved: true
+  )
+end

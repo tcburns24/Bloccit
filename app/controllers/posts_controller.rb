@@ -2,11 +2,6 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all
-    @posts.each_with_index do |post, index|
-      if index % 5 == 0
-        post.title = "SPAM"
-      end
-    end
   end
 
   def show
@@ -58,5 +53,5 @@ class PostsController < ApplicationController
       flash.now[:alert] = "There was an error deleting the post."
       render :show
     end
-  end  
+  end
 end
