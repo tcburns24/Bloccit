@@ -1,7 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe LabelsController, type: :controller do
-  let(:my_label) { Label.create!(name: "L1") }
+  let(:comment) { create(:comment) }
+  let(:label) { create(:label) }
+  let(:vote) { create(:vote) }
 
   describe "GET #show" do
     it "returns http success" do

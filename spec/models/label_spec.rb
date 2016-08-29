@@ -4,6 +4,9 @@ RSpec.describe Label, type: :model do
   let(:topic) { create(:topic) }
   let(:user) { create(:user) }
   let(:post) { create(:post) }
+  let(:comment) { create(:comment) }
+  let(:label) { create(:label) }
+  let(:vote) { create(:vote) }
   let(:label) { Label.create!(name: 'Label') }
   let(:label2) { Label.create!(name: 'Label2') }
 

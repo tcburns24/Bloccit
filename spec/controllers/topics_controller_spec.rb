@@ -4,6 +4,9 @@ include SessionsHelper
 
 RSpec.describe TopicsController, type: :controller do
   let(:my_topic) { create(:topic) }
+  let(:comment) { create(:comment) }
+  let(:label) { create(:label) }
+  let(:vote) { create(:vote) }
 
   context "guest" do
     describe "GET index" do
